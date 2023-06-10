@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, #3f71b6, #7b4fb0);
+      }
+      .login-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1%;
+        border-radius: 10px;
+        width: 500px;
+        background-color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      @media (max-width: 768px) {
+        .login-form {
+          width: 90%;
+        }
+      }
+      .login-form form {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-form h2 {
+        font-family: sans-serif;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        padding: 2%;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 2%;
+      }
+      .login-form form input[type="text"],
+      .login-form form input[type="password"] {
+        width: 90%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 4%;
+        font-size: 17px;
+        font-family: sans-serif;
+        position: relative;
+      }
+      .login-form form input[type="text"] {
+        left: 100%;
+      }
+      .login-form form input[type="password"] {
+        right: 100%;
+      }
+      ::placeholder {
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+      .login-form form #forgotpass {
+        width: 90%;
+        font-family: sans-serif;
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      .login-form form input[type="submit"] {
+        background-color: #3f71b6;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        height: 45px;
+        width: 90%;
+        border-radius: 25px;
+        margin-bottom: 2%;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+        opacity: 0;
+      }
+      .login-form form input[type="submit"]:hover {
+        background-color: transparent;
+        color: #3f71b6;
+        box-shadow: 0.2px 0px 20px 5px #3f71b6;
+      }
+      .login-form form #createacc {
+        font-family: sans-serif;
+        color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        bottom: 20000px;
+      }
+      .login-form form #createacc span {
+        color: #3f71b6;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-form">
+      <h2>Login</h2>
+      <form action="">
+        <input class="name" type="text" name="" id="" placeholder="Username" />
+        <input class="password" type="password" placeholder="Password" />
+        <p id="forgotpass">Forgot Password ?</p>
+        <input type="submit" value="Login" class="btn" />
+        <p id="createacc">Not a member?<span>Sign Up</span></p>
+      </form>
+    </div>
+    <script src="jq.js"></script>
+  </body>
+</html>
